@@ -1,22 +1,22 @@
-public class Topico extends Conteudo {
+public class Paciente extends Problema {
 
-    private int cargaHoraria;
+    private int prioridade;
 
-    public Topico(String descricao, int cargaHoraria) {
+    public Paciente(String descricao, int prioridade) {
         super(descricao);
-        this.cargaHoraria = cargaHoraria;
+        this.prioridade = prioridade;
     }
 
-    public int getCargaHoraria() {
-        return cargaHoraria;
+    public int getPrioridade() {
+        return prioridade;
     }
 
-    public void setCargaHoraria(int cargaHoraria) {
-        this.cargaHoraria = cargaHoraria;
+    public void setPrioridade(int prioridade) {
+        this.prioridade = prioridade;
     }
 
-    public String getConteudo() {
-        return "Tópico: " + this.getDescricao() + " - carga horária: " + this.cargaHoraria + "\n";
+    public String getProblema() {
+        return "Prontuário: " + this.getDescricao() + " - prioridade: " + this.prioridade + "\n";
     }
 
 }

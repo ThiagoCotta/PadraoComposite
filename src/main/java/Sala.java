@@ -1,24 +1,24 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Unidade extends Conteudo {
+public class Sala extends Problema {
 
-    private List<Conteudo> conteudos;
+    private List<Problema> problemas;
 
-    public Unidade(String descricao) {
+    public Sala(String descricao) {
         super(descricao);
-        this.conteudos = new ArrayList<Conteudo>();
+        this.problemas = new ArrayList<Problema>();
     }
 
-    public void addConteudo(Conteudo conteudo) {
-        this.conteudos.add(conteudo);
+    public void addProblema(Problema problema) {
+        this.problemas.add(problema);
     }
 
-    public String getConteudo() {
+    public String getProblema() {
         String saida = "";
-        saida = "Unidade: " + this.getDescricao() + "\n";
-        for (Conteudo conteudo : conteudos) {
-            saida += conteudo.getConteudo();
+        saida = "Sala: " + this.getDescricao() + "\n";
+        for (Problema problema : problemas) {
+            saida += problema.getProblema();
         }
         return saida;
     }

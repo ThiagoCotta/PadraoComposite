@@ -1,15 +1,15 @@
-public class Disciplina {
+public class Hospital {
 
-    private Conteudo ementa;
+    private Problema sala;
 
-    public void setEmenta(Conteudo ementa) {
-        this.ementa = ementa;
+    public void setRelatorio(Problema sala) {
+        this.sala = sala;
     }
 
-    public String getEmenta() {
-        if (this.ementa == null) {
-            throw new NullPointerException("Disciplina sem ementa");
+    public String getRelatorio() {
+        if (this.sala == null) {
+            throw new NullPointerException("Hospital sem salas ocupadas");
         }
-        return this.ementa.getConteudo();
+        return this.sala.getProblema();
     }
 }

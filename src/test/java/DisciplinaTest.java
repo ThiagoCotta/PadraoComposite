@@ -28,11 +28,11 @@ class DisciplinaTest {
 
         assertEquals("Sala: Andar 1\n" +
                 "Sala: Pronto-Socorro\n" +
+                "Prontuário: Paciente ferido no ombro após acidente - prioridade: 5\n" +
                 "Sala: Ambulatório\n" +
-                "Paciente: Paciente ferido no ombro após acidente - prioridade: 5\n" +
+                "Prontuário: Paciente apresenta febre de 38.1 graus - prioridade: 4\n" +
                 "Sala: Centro Cirúrgico\n" +
-                "Paciente: Padrão Observer - prioridade: 4\n" +
-                "Paciente: Padrão State - prioridade: 10\n", hospital.getRelatorio());
+                "Prontuário: Paciente necessita de troca de coração - prioridade: 10\n", hospital.getRelatorio());
     }
 
     @Test
